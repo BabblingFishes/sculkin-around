@@ -1,0 +1,45 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:warden_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{EntityTag:{id:\"minecraft:marker\",Tags:[\"sculking.destination\"]}}"
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": "this",
+              "ops": [
+                {
+                  "source": "Pos[0]",
+                  "target": "EntityTag.data.sculking.origin",
+                  "op": "append"
+                },
+                {
+                  "source": "Pos[1]",
+                  "target": "EntityTag.data.sculking.origin",
+                  "op": "append"
+                },
+                {
+                  "source": "Pos[2]",
+                  "target": "EntityTag.data.sculking.origin",
+                  "op": "append"
+                },
+                {
+                  "source": "data.sculking.dim_id",
+                  "target": "EntityTag.data.sculking.dim_id",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:warden_spawn_egg"
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "sculking:technical/activate_key"
+  }
+}

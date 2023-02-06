@@ -1,0 +1,63 @@
+[
+  {
+    "condition": "minecraft:location_check",
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:lightning_rod"
+        ],
+        "state": {
+          "facing": "up"
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetY": -1,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:stone_brick_wall"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetY": -2,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:barrel"
+        ],
+        "nbt": "{Items:[{Slot:3b,id:\"minecraft:amethyst_shard\",Count:1b},{Slot:4b,id:\"minecraft:amethyst_shard\",Count:1b},{Slot:5b,id:\"minecraft:amethyst_shard\",Count:1b},{Slot:9b,id:\"minecraft:copper_ingot\",Count:1b},{Slot:10b,id:\"minecraft:copper_ingot\",Count:1b},{Slot:11b,id:\"minecraft:copper_ingot\",Count:1b},{Slot:12b,id:\"minecraft:amethyst_shard\",Count:1b},{Slot:14b,id:\"minecraft:amethyst_shard\",Count:1b},{Slot:15b,id:\"minecraft:copper_ingot\",Count:1b},{Slot:16b,id:\"minecraft:copper_ingot\",Count:1b},{Slot:17b,id:\"minecraft:copper_ingot\",Count:1b},{Slot:21b,id:\"minecraft:amethyst_shard\",Count:1b},{Slot:22b,id:\"minecraft:amethyst_shard\",Count:1b},{Slot:23b,id:\"minecraft:amethyst_shard\",Count:1b}]}"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetY": -3,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:stone_brick_wall"
+        ]
+      }
+    }
+  },
+  {
+    "condition": "minecraft:location_check",
+    "offsetY": -4,
+    "predicate": {
+      "block": {
+        "blocks": [
+          "minecraft:lightning_rod"
+        ],
+        "state": {
+          "facing": "down"
+        }
+      }
+    }
+  }
+]

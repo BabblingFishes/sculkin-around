@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:lightning_rod",
+        "state": {
+          "facing": "up"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "sculking:technical/structure_check"
+  }
+}

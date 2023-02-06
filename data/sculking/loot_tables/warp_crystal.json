@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:amethyst_cluster",
+          "functions": [
+            {
+              "function": "minecraft:copy_nbt",
+              "source": "this",
+              "ops": [
+                {
+                  "source": "Pos[0]",
+                  "target": "sculking.x",
+                  "op": "append"
+                },
+                {
+                  "source": "Pos[1]",
+                  "target": "sculking.y",
+                  "op": "append"
+                },
+                {
+                  "source": "Pos[2]",
+                  "target": "sculking.z",
+                  "op": "append"
+                },
+                {
+                  "source": "data.sculking.dim_id",
+                  "target": "sculking.dim_id",
+                  "op": "append"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
