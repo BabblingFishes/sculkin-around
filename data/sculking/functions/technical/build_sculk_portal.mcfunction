@@ -21,18 +21,17 @@ scoreboard players operation @e[type=minecraft:marker,tag=sculking.new_portal,so
 execute store result entity @e[type=minecraft:marker,tag=sculking.new_portal,sort=nearest,limit=1] data.sculking.dim_id int 1 run scoreboard players get sculking.world sculking.dim_id
 
 setblock ~ ~ ~ minecraft:end_rod[facing=up]
-setblock ~ ~-2 ~ minecraft:end_gateway
+setblock ~ ~-1 ~ minecraft:polished_blackstone_brick_wall
+setblock ~ ~-2 ~ minecraft:end_gateway{ExactTeleport:true}
+setblock ~ ~-3 ~ minecraft:polished_blackstone_brick_wall
 setblock ~ ~-4 ~ minecraft:end_rod[facing=down]
 
-# summon minecraft:lightning_bolt ~ ~-1 ~
-playsound minecraft:entity.lightning_bolt.impact block @a ~ ~ ~ 4 1.5
-playsound minecraft:entity.lightning_bolt.thunder block @a ~ ~ ~ 4 1
+summon minecraft:lightning_bolt ~ ~-1 ~
+# playsound minecraft:entity.lightning_bolt.impact block @a ~ ~ ~ 4 1.5
+# playsound minecraft:entity.lightning_bolt.thunder block @a ~ ~ ~ 4 1
 particle minecraft:explosion ~ ~-2 ~ 0 0 0 1 1
 particle minecraft:sonic_boom ~ ~ ~
-particle minecraft:sonic_boom ~ ~-4 ~
 particle minecraft:scrape ~ ~-2 ~ 1 2 1 10 20
 
-
-execute as @e[type=minecraft:marker,tag=sculking.new_portal,sort=nearest,limit=1] run loot spawn ~ ~-4 ~ loot sculking:warp_key
-
-tag @e[type=marker,tag=sculking.new_portal,sort=nearest,limit=1] remove sculking.new_portal
+# we have to schedule this so the lightning doesn't destroy the key
+schedule function sculking:technical/drop_warp_key 1s append
