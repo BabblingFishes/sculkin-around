@@ -8,6 +8,45 @@
           "name": "minecraft:warden_spawn_egg",
           "functions": [
             {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Warp Spore",
+                "color": "dark_purple"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "#",
+                  "color": "dark_aqua",
+                  "extra": [
+                    {
+                      "nbt": "data.sculking.portal_id",
+                      "entity": "@s"
+                    }
+                  ]
+                },
+                {
+                  "text": "Place this in a new portal",
+                  "color": "aqua"
+                },
+                {
+                  "text": "frame to pair 2-way portals,",
+                  "color": "aqua"
+                },
+                {
+                  "text": "or plant it to set a 1-way",
+                  "color": "aqua"
+                },
+                {
+                  "text": "portal's destination.",
+                  "color": "aqua"
+                }
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
               "tag": "{EntityTag:{id:\"minecraft:marker\",Tags:[\"sculking.destination\"]}}"
             },
@@ -16,17 +55,22 @@
               "source": "this",
               "ops": [
                 {
-                  "source": "Pos[0]",
+                  "source": "data.sculking.portal_id",
+                  "target": "EntityTag.data.sculking.portal_id",
+                  "op": "replace"
+                },
+                {
+                  "source": "data.sculking.origin[0]",
                   "target": "EntityTag.data.sculking.origin",
                   "op": "append"
                 },
                 {
-                  "source": "Pos[1]",
+                  "source": "data.sculking.origin[1]",
                   "target": "EntityTag.data.sculking.origin",
                   "op": "append"
                 },
                 {
-                  "source": "Pos[2]",
+                  "source": "data.sculking.origin[2]",
                   "target": "EntityTag.data.sculking.origin",
                   "op": "append"
                 },

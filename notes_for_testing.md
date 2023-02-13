@@ -4,7 +4,9 @@ Testing suite consists of:
   PORTAL SPAWNING & DESTRUCTION:
     - Structure block that spawns in a fully-loaded barrel and frame minus the top lightning rod.
     - A list of unusual ways to make a portal:
-      - Underwater (my end rods... :c maybe I should put iron bars there...)
+      - Underground
+      - In a very tight space
+      - Underwater
       - Missing blocks
       - Lightning rods facing the wrong way
       - Wrong type of walls
