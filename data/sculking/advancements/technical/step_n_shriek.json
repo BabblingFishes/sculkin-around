@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:sculk_shrieker",
+        "state": {
+          "shrieking": "true"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "sculking:warp_spore/shrieker_check"
+  }
+}

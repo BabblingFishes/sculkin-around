@@ -11,7 +11,8 @@
               "function": "minecraft:set_name",
               "name": {
                 "text": "Warp Spore",
-                "color": "dark_purple"
+                "color": "aqua",
+                "italic": false
               }
             },
             {
@@ -20,7 +21,8 @@
               "lore": [
                 {
                   "text": "#",
-                  "color": "dark_aqua",
+                  "color": "gray",
+                  "italic": false,
                   "extra": [
                     {
                       "nbt": "data.sculking.portal_id",
@@ -29,26 +31,30 @@
                   ]
                 },
                 {
-                  "text": "Place this in a new portal",
-                  "color": "aqua"
+                  "text": "Stash this in a new portal",
+                  "color": "dark_aqua",
+                  "italic": false
                 },
                 {
                   "text": "frame to pair 2-way portals,",
-                  "color": "aqua"
+                  "color": "dark_aqua",
+                  "italic": false
                 },
                 {
-                  "text": "or plant it to set a 1-way",
-                  "color": "aqua"
+                  "text": "or plant it to signal a 1-way",
+                  "color": "dark_aqua",
+                  "italic": false
                 },
                 {
                   "text": "portal's destination.",
-                  "color": "aqua"
+                  "color": "dark_aqua",
+                  "italic": false
                 }
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{EntityTag:{id:\"minecraft:marker\",Tags:[\"sculking.destination\"]}}"
+              "tag": "{EntityTag:{id:\"minecraft:marker\",Tags:[\"sculking.destination\",\"sculking.new_destination\"]}}"
             },
             {
               "function": "minecraft:copy_nbt",

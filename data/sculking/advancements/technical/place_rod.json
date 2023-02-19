@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "sculking:technical/structure_check"
+    "function": "sculking:portal/structure_check"
   }
 }

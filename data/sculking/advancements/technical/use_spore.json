@@ -12,6 +12,6 @@
     }
   },
   "rewards": {
-    "function": "sculking:technical/activate_key"
+    "function": "sculking:warp_spore/activate_spore"
   }
 }
