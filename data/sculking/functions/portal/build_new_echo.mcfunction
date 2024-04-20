@@ -1,1 +1,1 @@
-say DEBUG: Transdimensional portals not yet implemented.
+say Transdimensional portals not yet implemented.
